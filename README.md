@@ -1,0 +1,7 @@
+### Dotfiles
+
+# Fish
+
+# NVIM
+
+# Kitty
