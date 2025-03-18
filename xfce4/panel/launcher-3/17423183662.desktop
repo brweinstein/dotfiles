@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Rnote
+Comment=Sketch and take handwritten notes
+Icon=com.github.flxzt.rnote
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=rnote --file-forwarding com.github.flxzt.rnote @@ %f @@
+Terminal=false
+MimeType=application/rnote;image/svg+xml;image/png;image/jpeg;application/pdf;application/x-xopp;
+Type=Application
+Categories=GNOME;GTK;Graphics;
+Keywords=Gnome;GTK;Office;Graphics;Notes;
+StartupNotify=true
+Actions=new-window
+X-Flatpak=com.github.flxzt.rnote
+X-XFCE-Source=file:///var/lib/flatpak/app/com.github.flxzt.rnote/x86_64/stable/b8c78c674198c9aa9f3e8f012ca339aa3f2747b74ca01e0c389629d5895d9954/export/share/applications/com.github.flxzt.rnote.desktop
+
+[Desktop Action new-window]
+Name=New Window
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=rnote --file-forwarding com.github.flxzt.rnote @@ %f @@
