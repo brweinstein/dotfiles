@@ -1,0 +1,28 @@
+[terminal.shell]
+program = "wsl"
+args = ["--cd", "~"]
+
+[cursor]
+style = "Beam"
+
+[font]
+size = 12.0
+normal = { family = "JetBrainsMono NF" }
+
+[window]
+startup_mode = "Windowed"
+dynamic_padding = true
+opacity = 0.8
+
+[window.padding]
+x = 5
+y = 5
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[general]
+import = ["C:/Users/Brwei/AppData/Roaming/alacritty/themes/themes/gruvbox_material_medium_dark.toml"]
+#import = ["C:/Users/Brwei/AppData/Roaming/alacritty/themes/themes/one_dark.toml"]
+

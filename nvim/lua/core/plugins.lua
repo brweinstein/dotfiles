@@ -17,7 +17,7 @@ use 'nvim-tree/nvim-tree.lua'
 use 'navarasu/onedark.nvim'  -- Load the Onedark theme
 use 'nvim-tree/nvim-web-devicons'
 use 'm4xshen/autoclose.nvim'
-use {'lukas-reineke/indent-blankline.nvim', version = 'v3.*'}
+use 'ellisonleao/gruvbox.nvim'
 use {'nvim-treesitter/nvim-treesitter', run = 'TSUpdate'}
 use {
 	'nvim-telescope/telescope.nvim', tag = '0.1.8',
