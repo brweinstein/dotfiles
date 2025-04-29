@@ -1,6 +1,7 @@
 [terminal.shell]
 program = "wsl"
-args = ["--cd", "~"]
+args = ["--cd", "~", "tmux"]
+
 
 [cursor]
 style = "Beam"
@@ -23,6 +24,6 @@ columns = 120
 lines = 30
 
 [general]
-import = ["C:/Users/Brwei/AppData/Roaming/alacritty/themes/themes/gruvbox_material_medium_dark.toml"]
-#import = ["C:/Users/Brwei/AppData/Roaming/alacritty/themes/themes/one_dark.toml"]
-
+import = [
+   "%APPDATA%/Roaming/alacritty/themes/gruvbox_material_hard_dark.toml"
+]
