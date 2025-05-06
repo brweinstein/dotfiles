@@ -1,0 +1,28 @@
+[terminal.shell]
+program = "wsl"
+args = ["--cd", "~", "tmux"]
+
+[cursor]
+style = "Beam"
+
+[font]
+size = 12.0
+normal = { family = "JetBrainsMono NF" }
+
+[window]
+startup_mode = "Windowed"
+dynamic_padding = true
+opacity = 0.75
+
+[window.padding]
+x = 5
+y = 5
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[general]
+import = [
+   "%APPDATA%/Roaming/alacritty/themes/one_dark.toml"
+]
