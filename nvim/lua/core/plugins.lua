@@ -13,6 +13,21 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
 use 'wbthomason/packer.nvim'
+use {
+  'iamcco/markdown-preview.nvim',
+  run = 'cd app && npm install',
+  ft = { 'markdown' }
+}
+use 'neovim/nvim-lspconfig'
+use 'williamboman/mason.nvim'
+use 'williamboman/mason-lspconfig.nvim'
+use { "hrsh7th/nvim-cmp" }
+use { "hrsh7th/cmp-nvim-lsp" }
+use { "hrsh7th/cmp-buffer" }
+use { "hrsh7th/cmp-path" }
+use { "hrsh7th/cmp-cmdline" }
+use { "L3MON4D3/LuaSnip" }
+use { "saadparwaiz1/cmp_luasnip" }
 use 'nvim-tree/nvim-tree.lua'
 use 'navarasu/onedark.nvim'  -- Load the Onedark theme
 use 'nvim-tree/nvim-web-devicons'
@@ -24,8 +39,6 @@ use {
 	'nvim-telescope/telescope.nvim', tag = '0.1.8',
 	requires = { {'nvim-lua/plenary.nvim'} }
 }
-
-
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
