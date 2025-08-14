@@ -1,28 +1,48 @@
+# ────────────────────────────────
+# Alacritty Configuration
+# ────────────────────────────────
 [terminal.shell]
-program = "wsl"
-args = ["--cd", "~", "tmux"]
-
+program = "tmux"
+args = ["new-session", "-A", "-s", "main"]  # attach to 'main' session if exists
+# Cursor
 [cursor]
 style = "Beam"
 
+# Font
 [font]
-size = 12.0
 normal = { family = "JetBrainsMono NF" }
+size = 10.0
+offset = { x = 0, y = 0 }
+# use `bold` weight for better visibility
+bold = { family = "JetBrainsMono NF", style = "Bold" }
 
+# Window
 [window]
 startup_mode = "Windowed"
 dynamic_padding = true
-opacity = 0.75
-
-[window.padding]
-x = 5
-y = 5
+opacity = 1.0
+padding = { x = 8, y = 8 }
+# Optional: round window corners on some platforms
+decorations = "Full"
 
 [window.dimensions]
 columns = 120
 lines = 30
 
+# Scrollback
+[scrolling]
+history = 10000
+multiplier = 3
+
+# General
 [general]
-import = [
-   "%APPDATA%/Roaming/alacritty/themes/one_dark.toml"
-]
+# Import One Dark theme
+import = ["~/.config/alacritty/themes/one_dark.toml"]
+
+# Colors (optional override if you want to tweak)
+[colors]
+# fallback in case theme import fails
+primary.background = "#282c34"
+primary.foreground = "#abb2bf"
+
+[terminal]

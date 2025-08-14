@@ -1,4 +1,4 @@
-if vim.tbl_islist then
+if not vim.tbl_islist and vim.islist then
   vim.tbl_islist = vim.islist
 end
 
