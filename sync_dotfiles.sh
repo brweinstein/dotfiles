@@ -3,7 +3,6 @@
 
 DOTFILES_DIR="$HOME/Documents/dotfiles/"
 
-# Files/dirs to sync into the repo before committing
 declare -A SOURCES=(
   [".zshrc"]="$HOME/.zshrc"
   [".tmux.conf"]="$HOME/.tmux.conf"
@@ -11,12 +10,10 @@ declare -A SOURCES=(
   ["nvim"]="$HOME/.config/nvim"
 )
 
-cd "$DOTFILES_DIR" || { echo "dotfiles: repo not found at $DOTFILES_DIR"; return 1; }
+cd "$DOTFILES_DIR" || { echo "dotfiles: repo not found at $DOTFILES_DIR"; exit 1; }
 
-# Pull first to stay in sync with any changes from other machines
 git pull --rebase --autostash -q
 
-# Copy latest files into the repo
 for dest in "${!SOURCES[@]}"; do
   src="${SOURCES[$dest]}"
   if [[ -e "$src" ]]; then
@@ -24,12 +21,9 @@ for dest in "${!SOURCES[@]}"; do
   fi
 done
 
-# Commit & push only if something changed
-if ! git diff --quiet || ! git diff --cached --quiet; then
+if [[ -n $(git status --porcelain) ]]; then
   git add -A
   git commit -m "dotfiles: auto-sync $(date '+%Y-%m-%d %H:%M')"
-  git push -q
+  git push origin master -q
   echo "dotfiles: synced"
 fi
-
-cd "$HOME"
