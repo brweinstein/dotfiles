@@ -1,6 +1,5 @@
 [terminal.shell]
-program = "wsl"
-args = ["-d", "Arch", "--user", "bw", "--cd", "~", "tmux"]
+program = "/usr/bin/tmux"
 
 [cursor]
 style = "Beam"
@@ -11,12 +10,11 @@ normal = { family = "JetBrainsMono NF" }
 
 [window]
 startup_mode = "Windowed"
-dynamic_padding = true
-opacity = 1
+opacity = 1.0
 
 [window.padding]
 x = 5
-y = 5
+y = 0
 
 [window.dimensions]
 columns = 120
@@ -24,5 +22,6 @@ lines = 30
 
 [general]
 import = [
-   "%APPDATA%/alacritty/themes/one_dark.toml"
+  "~/.config/alacritty/themes/theme.toml"
 ]
+

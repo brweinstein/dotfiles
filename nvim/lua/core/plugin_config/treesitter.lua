@@ -1,9 +1,11 @@
 -- treesitter.lua
-require'nvim-treesitter.configs'.setup {
+require'nvim-treesitter'.setup {
   -- Parsers to install
   ensure_installed = {
     "c",
     "rust",
+	"js",
+	"ts",
     "lua",
     "python",
     "vim",
@@ -11,6 +13,7 @@ require'nvim-treesitter.configs'.setup {
     "racket",
     "markdown",         -- Needed for markdown parsing
     "markdown_inline",  -- Needed for fenced code highlighting
+	"latex"
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
