@@ -1,0 +1,27 @@
+[terminal.shell]
+program = "/usr/bin/tmux"
+
+[cursor]
+style = "Beam"
+
+[font]
+size = 12.0
+normal = { family = "JetBrainsMono NF" }
+
+[window]
+startup_mode = "Windowed"
+opacity = 1.0
+
+[window.padding]
+x = 5
+y = 0
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[general]
+import = [
+  "~/.config/alacritty/themes/theme.toml"
+]
+

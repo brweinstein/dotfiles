@@ -29,5 +29,7 @@ if ! git diff --quiet || ! git diff --cached --quiet; then
   git add -A
   git commit -m "dotfiles: auto-sync $(date '+%Y-%m-%d %H:%M')"
   git push -q
-  echo "dotfiles: synced ✓"
+  echo "dotfiles: synced"
 fi
+
+cd "$HOME"
