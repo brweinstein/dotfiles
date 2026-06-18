@@ -38,9 +38,6 @@ alias q='exit'
 # ─ Path ──────────────────────────────────
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# Autosync dotfiles
-[[ -o login ]] && source ~/Documents/dotfiles/sync_dotfiles.sh
-
 # ─ Environment ───────────────────────────
 export EDITOR='nvim'
 export CLICOLOR=1

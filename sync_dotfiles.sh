@@ -27,3 +27,5 @@ if [[ -n $(git status --porcelain) ]]; then
   git push origin master -q
   echo "dotfiles: synced"
 fi
+
+cd "$HOME"
