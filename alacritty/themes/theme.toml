@@ -1,30 +1,26 @@
-# -----------------------------------------------------------------------------
-# One Dark Pro Colors
-# -----------------------------------------------------------------------------
-
 # Default colors
 [colors.primary]
-background = '#303030'
-foreground = '#abb2bf'
+background = '#282828'
+foreground = '#ebdbb2'
 
 # Normal colors
 [colors.normal]
-black   = '#282c34'
-red     = '#e06c75'
-green   = '#98c379'
-yellow  = '#e5c07b'
-blue    = '#61afef'
-magenta = '#c678dd'
-cyan    = '#56b6c2'
-white   = '#abb2bf'
+black   = '#282828'
+red     = '#cc241d'
+green   = '#98971a'
+yellow  = '#d79921'
+blue    = '#458588'
+magenta = '#b16286'
+cyan    = '#689d6a'
+white   = '#a89984'
 
 # Bright colors
 [colors.bright]
-black   = '#5c6370'
-red     = '#e06c75'
-green   = '#98c379'
-yellow  = '#e5c07b'
-blue    = '#61afef'
-magenta = '#c678dd'
-cyan    = '#56b6c2'
-white   = '#ffffff'
+black   = '#928374'
+red     = '#fb4934'
+green   = '#b8bb26'
+yellow  = '#fabd2f'
+blue    = '#83a598'
+magenta = '#d3869b'
+cyan    = '#8ec07c'
+white   = '#ebdbb2'
