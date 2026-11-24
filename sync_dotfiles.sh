@@ -17,7 +17,12 @@ git pull --rebase --autostash -q
 for dest in "${!SOURCES[@]}"; do
   src="${SOURCES[$dest]}"
   if [[ -e "$src" ]]; then
-    cp -r "$src" "$DOTFILES_DIR/$dest"
+    if [[ -d "$src" ]]; then
+      rm -rf "$DOTFILES_DIR/$dest"
+      cp -r "$src" "$DOTFILES_DIR/"
+    else
+      cp -f "$src" "$DOTFILES_DIR/$dest"
+    fi
   fi
 done
 

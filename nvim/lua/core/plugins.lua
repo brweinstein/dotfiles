@@ -79,7 +79,7 @@ return require('packer').startup(function(use)
     end
   }
 
-	use "olimorris/onedarkpro.nvim"
+	use { "ellisonleao/gruvbox.nvim" }
 
   -----------------------------------------------------------
   -- Telescope + FZF extension

@@ -85,3 +85,4 @@ ZSH_HIGHLIGHT_STYLES[redirection]='fg=#fb4934'
 ZSH_HIGHLIGHT_STYLES[path]='fg=#ebdbb2'
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#8ec07c'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#8ec07c'
+. "/home/bw/.deno/env"

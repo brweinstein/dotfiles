@@ -27,5 +27,4 @@ vim.opt.wrap = true          -- Enable line wrapping
 vim.opt.linebreak = true     -- Wrap at word boundaries
 vim.opt.breakat = " "        -- Allow wrap at spaces
 vim.opt.showbreak = "\\ "    -- Show "\" at the start of wrapped lines
-vim.cmd("colorscheme onedark")
-vim.cmd("colorscheme onedark")
+vim.cmd("colorscheme gruvbox")
